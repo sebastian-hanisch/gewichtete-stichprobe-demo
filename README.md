@@ -1,7 +1,6 @@
 # Gewichtete Stichprobe: Nachbarn statt Modell – Streamlit-Demo
 
-<!-- TODO nach dem Deploy: direkt hierher den Live-Link setzen (Leerzeile davor und danach):
-**[→ Demo live ausprobieren](https://sebastianhanisch-gewichtete-stichprobe-demo.streamlit.app/)** -->
+**[→ Demo live ausprobieren](https://sebastianhanisch-gewichtete-stichprobe-demo.streamlit.app/)**
 
 Demo der **Linie „Entscheidungsorientiertes Lernen“** in der „Konzepte“-Reihe für die Website „Sebastian Hanisch – Operations Research und Machine Learning“.
 Anders als die Fall-Demos (ein Anwendungsfall, mehrere Verfahren im Vergleich) zeigt sie **ein** Verfahren an einem wachsenden Beispiel: die **gewichtete Stichprobe** (SAA mit Gewichten).
