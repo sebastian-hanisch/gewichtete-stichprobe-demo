@@ -60,11 +60,11 @@ PRESETS = {
     "Quadratische Wahrheit: Gewichte gewinnen": {"welt": "quadratisch", "p": 3, "n": 1000, "tau": 0.95, "seed": DEFAULT_SEED},
     "Lineare Wahrheit: Gewichte zahlen": {"welt": "linear", "p": 3, "n": 1000, "tau": 0.95, "seed": DEFAULT_SEED},
     "Fluch der Dimension: wenig Daten, viele Merkmale": {"welt": "streuung_linear", "p": 10, "n": 100, "tau": 0.95, "seed": DEFAULT_SEED},
-    "Quadratisch, p = 10, n = 100: nur der Wald trägt": {"welt": "quadratisch", "p": 10, "n": 100, "tau": 0.95, "seed": DEFAULT_SEED},
+    "Quadratisch, p = 10, n = 100: nur der Wald reicht": {"welt": "quadratisch", "p": 10, "n": 100, "tau": 0.95, "seed": DEFAULT_SEED},
 }
 PRESET_HELP = {
     "Quadratische Wahrheit: Gewichte gewinnen": "Der Mittelwert hängt quadratisch von x₁ ab, die lineare Regel trifft ihn nicht: p = 3, n = 1000, τ = 0,95.",
     "Lineare Wahrheit: Gewichte zahlen": "Die Wahrheit ist linear und die Streuung konstant: p = 3, n = 1000, τ = 0,95. Die parametrische Regel ist hier richtig spezifiziert.",
     "Fluch der Dimension: wenig Daten, viele Merkmale": "Streuung linear in x₁, aber zehn Merkmale und nur 100 Fälle: p = 10, n = 100, τ = 0,95.",
-    "Quadratisch, p = 10, n = 100: nur der Wald trägt": "Quadratische Wahrheit mit zehn Merkmalen und 100 Fällen: in der Vormessung gewinnt hier nur der (nicht live gerechnete) Wald.",
+    "Quadratisch, p = 10, n = 100: nur der Wald reicht": "Quadratische Wahrheit mit zehn Merkmalen und 100 Fällen: in der Vormessung gewinnt hier nur der (nicht live gerechnete) Wald.",
 }

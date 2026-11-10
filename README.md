@@ -56,7 +56,7 @@ Zufall kommt nur aus SplitMix64 (`gws_rng.py`, aus `saa-demo` kopiert), nicht au
 | **Wenig Daten, viele Merkmale** | p = 10, n = 100, Welten linear, Streuung linear, \|x₁\|, τ = 0,5 / 0,8 / 0,95: kNN- und Wald-Gewichte kosten **31,4 bis 75,0 %** Mehrkosten (18 Werte) | `test_p10_n100_weights_lose_between_31_and_75_percent_in_three_worlds` |
 | Quadratisch, n = 100, τ = 0,95 | p = 3: KQ + empirisch 146,2, kNN 85,7, Wald 89,4. p = 10: KQ + empirisch 149,8, kNN 150,9, **Wald 95,5** | `test_quadratic_p3_n100_tau95_and_p10_n100_tau95` |
 | Gauß-Kern gegen kNN | In **39 von 48 Zellen** liegen die Mediane höchstens 4 Prozentpunkte auseinander. Die übrigen 9 (7 quadratisch, 2 Streuung linear) gehen in beide Richtungen: quadratisch, p = 3, n = 1000, τ = 0,5 / 0,8: Kern 14,6 / 16,5 gegen kNN 22,2 / 23,5; quadratisch, p = 3, n = 100, τ = 0,95: Kern 94,1 gegen kNN 85,7 | `test_kernel_beats_knn_at_quadratic_p3_n1000_for_tau_05_and_08`, `test_kernel_and_knn_differ_by_at_most_four_points_in_most_cells` |
-| Der Nachbau trägt die Aussagen der Vormessung (live, quadratisch, p = 3, n = 1000, τ = 0,95) | Über fünf feste Instanzen: kNN und Kern kosten weniger als die Hälfte der Mehrkosten von KQ + empirisch; direkt in der falschen Klasse bleibt über 90 % von KQ + empirisch | `test_live_quadratic_truth_n1000_p3_weights_cost_less_than_half_of_the_linear_rule` |
+| Der Nachbau bestätigt die Aussagen der Vormessung (live, quadratisch, p = 3, n = 1000, τ = 0,95) | Über fünf feste Instanzen: kNN und Kern kosten weniger als die Hälfte der Mehrkosten von KQ + empirisch; direkt in der falschen Klasse bleibt über 90 % von KQ + empirisch | `test_live_quadratic_truth_n1000_p3_weights_cost_less_than_half_of_the_linear_rule` |
 
 **Experiment 3 (live, fünf feste Instanzen, Seeds 100000 bis 100004, 1000 Testfälle, τ = 0,95; Median der Mehrkosten in %, Messung dieser README, ein Lauf unter Windows).** Im Test stehen nur die Ungleichungen daneben, nicht die Ziffern:
 
@@ -167,4 +167,4 @@ Gebaut mit Streamlit, Plotly, NumPy, SciPy und pandas.
 
 ---
 
-Diese Demo ist Teil des Portfolios von [Sebastian Hanisch](https://sebastianhanisch.net) – Operations Research und Machine Learning ([Über mich](https://sebastianhanisch.net/ueber-mich.html)). Mehr zu den Demos: [Interaktive Demos](https://sebastianhanisch.net/demos.html).
+Diese Demo ist Teil des Portfolios von [Sebastian Hanisch](https://sebastianhanisch.net) – Operations Research und Machine Learning ([Über mich](https://sebastianhanisch.net/ueber-mich.html)). Mehr zur Reihe: [Entscheidungsorientiert: Regret bis Wahl](https://sebastianhanisch.net/konzepte-entscheidungsorientiert.html).
