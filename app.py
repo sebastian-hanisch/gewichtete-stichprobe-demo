@@ -57,7 +57,7 @@ st.markdown(
 Demo der Reihe „Entscheidungsorientiertes Lernen“. Ein Händler bestellt vor der Nachfrage; zu jedem Fall gibt es **Merkmale x**. Statt ein Modell für die Nachfrage zu schätzen, vergibt man an die
 **vergangenen Fälle Gewichte nach ihrer Ähnlichkeit** zum neuen Fall und bestellt das **Quantil der gewichteten Nachfragen** (SAA mit Gewichten). Das kommt ohne parametrisches Modell für die Nachfrage aus; es setzt voraus, dass ähnliche Fälle ähnliche Nachfrageverteilungen haben.
 Die Demo misst, wann das gewinnt und wann es zahlt: Gewichte aus den **k nächsten Nachbarn** und aus einem **Gauß-Kern** rechnet die App live in numpy;
-Gewichte aus einem **Zufallswald** erscheinen nur als eingefrorene Vormessung (mit scikit-learn, nicht live).
+Gewichte aus einem **Random Forest** erscheinen nur als eingefrorene Vormessung (mit scikit-learn, nicht live).
 
 Weiter unten: vier Experimente (**Gewichte von Hand**, **Welt wählen**, **Fluch der Dimension**, **k und Bandbreite**), **🚧 Wo die Annahmen enden** und der Expander **📐 Mathematische Formulierung**.
 """
@@ -170,7 +170,7 @@ st.dataframe(
 )
 st.caption(
     f"Leave-one-out wählt auf dieser Instanz k = {analysis.k} und die Bandbreite {ev.de(analysis.h_rel)} (bezogen auf p = 3). Gewähltes k der Vormessung im Median über {C.VORMESSUNG_SEEDS} Seeds: {cell['k_median']}. "
-    f"Wald-Gewichte: {C.WALD_HINWEIS} (50 Bäume, mindestens 5 je Blatt, Merkmalsauswahl 0,5, nicht abgestimmt); die Zeile sagt nichts über Zufallswälder im Allgemeinen."
+    f"Wald-Gewichte: {C.WALD_HINWEIS} (50 Bäume, mindestens 5 je Blatt, Merkmalsauswahl 0,5, nicht abgestimmt); die Zeile sagt nichts über Random Forests im Allgemeinen."
 )
 
 st.markdown("---")

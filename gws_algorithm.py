@@ -5,7 +5,7 @@ Regeln (alle liefern eine Bestellmenge je Testfall):
   direkt        lineare Quantilregression zum Niveau tau (Pinball-Verlust als lineares Programm, scipy/HiGHS), entscheidet direkt auf den Kosten
   knn           gewichtete Stichprobe mit k nächsten Nachbarn, k per Leave-one-out
   kern          gewichtete Stichprobe mit Gauß-Kerngewichten, Bandbreite per Leave-one-out
-Zufallswald-Gewichte werden hier NICHT gerechnet (kein scikit-learn zur Laufzeit); ihre Zahlen stehen nur als eingefrorene Vormessung in `gws_vormessung.json`.
+Random Forest-Gewichte werden hier NICHT gerechnet (kein scikit-learn zur Laufzeit); ihre Zahlen stehen nur als eingefrorene Vormessung in `gws_vormessung.json`.
 
 Mehrkosten gegen das Orakel = (Kosten der Regel - Kosten des Orakels) / Kosten des Orakels, in Prozent, gemessen auf den Testfällen (dieselben Testfälle für alle Regeln)."""
 

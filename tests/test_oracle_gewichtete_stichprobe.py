@@ -6,7 +6,7 @@
   Quantilregression (LP)      gegen Aufzählung aller Geraden durch zwei Datenpunkte (der Optimalwert liegt bei einer Ecke)
   Kleinste Quadrate           gegen scipy.stats.linregress
   wahres Quantil (Orakel)     gegen numerische Minimierung der erwarteten Kosten auf einem feinen Raster
-  Zufallswald-Gewichte        werden in der Demo nicht gerechnet (kein scikit-learn zur Laufzeit): kein Orakel nötig, die Zahlen sind eingefrorene Vormessung
+  Random Forest-Gewichte        werden in der Demo nicht gerechnet (kein scikit-learn zur Laufzeit): kein Orakel nötig, die Zahlen sind eingefrorene Vormessung
 
 Die Zufallsinstanzen sind klein (n <= 14) und fest; ein Lauf mit 200 Instanzen steht nicht im Repo (Scratch)."""
 

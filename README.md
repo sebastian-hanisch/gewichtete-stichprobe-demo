@@ -78,7 +78,7 @@ Der Test `test_live_choice_experiment_leave_one_out_is_never_below_the_hindsight
 ## Ehrliche Grenzen
 
 - **Eine Familie von Instanzen:** Normalverteiltes Rauschen, Stutzung bei 0, standardnormale Merkmale, vier Welten. Andere Verteilungen, schiefe oder korrelierte Merkmale, abhängige Fälle sind nicht gemessen.
-- **Der Wald ist nicht abgestimmt** (50 Bäume, Blattgröße 5, Merkmalsauswahl 0,5) und **nicht live**: Die Wald-Zahlen sind eine Vormessung mit scikit-learn. Sie sagen nichts über Zufallswälder im Allgemeinen. Die Gewichte sind nicht regularisiert; der Kern ist ein Gauß-Kern mit einer Bandbreite für alle Richtungen, der Abstand zählt alle p Merkmale gleich.
+- **Der Wald ist nicht abgestimmt** (50 Bäume, Blattgröße 5, Merkmalsauswahl 0,5) und **nicht live**: Die Wald-Zahlen sind eine Vormessung mit scikit-learn. Sie sagen nichts über Random Forests im Allgemeinen. Die Gewichte sind nicht regularisiert; der Kern ist ein Gauß-Kern mit einer Bandbreite für alle Richtungen, der Abstand zählt alle p Merkmale gleich.
 - **Live-Zahlen sind klein gerechnet:** fünf feste Instanzen und 1000 Testfälle gegen 30 Seeds und 5000 in der Vormessung; eine einzelne Live-Instanz weicht vom Median ab (siehe Spalten Minimum und Maximum). Der Nachbau nutzt einen anderen Zufallsstrom (SplitMix64) als die Vormessung (numpy-Standardgenerator), die Ziffern stimmen deshalb nicht überein.
 - **Die „Gleichauf-Grenze“** (Unterschied höchstens max(1 Prozentpunkt, 5 % des größeren Werts)) ist eine Festlegung dieser Demo für das Verdikt, keine statistische Schwelle; die Zählung 36 / 9 / 3 hängt an ihr.
 - **Die Leave-one-out-Wahl auf einem Raster** ist eine von vielen Wahlregeln; die „im Nachhinein beste feste Wahl“ nutzt die Testfälle und ist nicht ausführbar, sie ist nur ein Maßstab.
@@ -140,7 +140,7 @@ Der Nachbau trifft in diesen fünf Zellen die Größenordnung und denselben Sieg
 
 ## Bewusst nicht umgesetzt
 
-- **Zufallswald-Gewichte live** (kein scikit-learn zur Laufzeit; ein numpy-Wald ist nicht Teil der Demo).
+- **Random Forest-Gewichte live** (kein scikit-learn zur Laufzeit; ein numpy-Wald ist nicht Teil der Demo).
 - **PDF-Export** der Ergebnisse.
 - **Regularisierte oder abgestimmte Gewichte**, andere Kerne, gewichtete Abstände, Merkmalsauswahl.
 - **Weitere Welten und Verteilungsfamilien**, Merkmale mit Korrelation, Zeitreihen.
